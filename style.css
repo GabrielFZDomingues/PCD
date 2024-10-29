@@ -1,0 +1,298 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    width: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    text-align: left;
+}
+
+.hero-left, .hero-right {
+    flex: 1;
+}
+
+.hero-left h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-right p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Botões na Hero Section */
+.btn-primary, .btn-secondary {
+    padding: 10px 30px;
+    border-radius: 50px; /* Deixa os botões mais arredondados */
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-primary {
+	border: 2px solid black;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-secondary {
+    border: 2px solid black;
+    color: #007bff;
+}
+
+
+/* Ícones na Hero Section */
+.hero-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon i {
+    font-size: 2em;
+    color: #6c8ff5;
+}
+
+.icon p {
+    margin-top: 5px;
+    color: #333;
+}
+/* Ícone pequeno ao lado do texto */
+.small-icon {
+    font-size: 0.9em;
+    color: Black;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left, .hero-right {
+        width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+}
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Aspectos da Automação */
+.aspectos-automacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.aspectos-texto {
+    flex: 1;
+    padding-right: 20px;
+    max-width: 600px;
+}
+
+.aspectos-texto h4 {
+    color: #6c8ff5;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.aspectos-texto h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.aspectos-texto p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Lista de Aspectos */
+.aspectos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aspecto {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+}
+
+.aspecto i {
+    font-size: 1.5em;
+    color: #6c8ff5;
+    margin-top: 5px;
+}
+
+.aspecto h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.aspecto p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Imagem */
+.aspectos-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+}
+
+.imagem-overlay {
+    position: relative;
+    background-color: #cce0ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.imagem-overlay img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-section {
+    text-align: center; /* Centraliza o texto dentro da seção */
+    margin: 20px;      /* Adiciona uma margem ao redor da seção */
+}
+
+.main-text {
+    font-size: 32px;   /* Tamanho do texto em negrito */
+    font-weight: bold; /* Aplica o negrito */
+}
+
+.sub-text {
+    font-size: 24px;   /* Tamanho do texto normal */
+	color: gray;
+    margin-top: 10px;  /* Espaçamento entre os textos */
+}
+
+.video-container {
+    display: flex;               /* Utiliza flexbox para centralizar o vídeo */
+    justify-content: center;     /* Centraliza horizontalmente */
+    margin: 50px;             	 /* Adiciona margens acima e abaixo do vídeo */
+}
+
+/*Colunas*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
