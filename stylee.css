@@ -1,0 +1,343 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    width: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.up-next {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Categorias */
+.categorias {
+    text-align: center;
+    background-color: #e5ffe5;
+    padding: 50px 0;
+}
+
+.categorias-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+img {
+  border-radius: 10%;
+}
+
+/* Passos */
+.passos {
+    background-color: #e5ffe5;
+    padding: 50px 0;
+    text-align: center;
+     font-size: 1.6em;
+}
+
+.passos-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Ajuste conforme necessário para a altura da seção */
+}
+
+.passos-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens dentro da coluna */
+    gap: 100px; /* Define o espaço entre cada item */
+    text-align: center; /* Centraliza o texto */
+}
+
+.passo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.passo i {
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+.passo h3 {
+    font-size: 1.3em;
+}
+
+.passo p {
+    font-size: 1em;
+}
+
+
+/* FAQ */
+.faq {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 10px 0;
+    color: #333;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 0;
+    color: #666;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px;
+    background-color: #F0F9F4;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    background-color: #E0F7E6;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.contact-card h3 {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.contact-card p {
+    font-size: 0.9em;
+    color: #333;
+    margin: 5px 0;
+}
+/* Responsividade para tablets (largura máxima de 768px) */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .contact-btn {
+        margin-top: 10px;
+        padding: 8px 16px;
+    }
+
+    /* Hero Section */
+    .hero-content {
+        top: 20%;
+        left: 5%;
+        padding: 10px;
+    }
+
+    /* Categorias */
+    .categorias-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Passos */
+    .passos-container {
+        padding: 20px;
+    }
+
+    .passos-lista {
+        gap: 50px; /* Reduz o espaço entre itens */
+    }
+
+    /* FAQ */
+    .faq {
+        padding: 20px;
+    }
+
+    /* Contact Section */
+    .contact-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .contact-card {
+        width: 100%; /* Faz os cartões ocuparem toda a largura */
+        padding: 15px;
+    }
+}
+
+/* Responsividade para smartphones (largura máxima de 480px) */
+@media (max-width: 480px) {
+    /* Navbar */
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar ul {
+        align-items: center;
+    }
+
+    /* Hero Section */
+    .hero-content {
+        top: 10%;
+        left: 5%;
+        padding: 5px;
+    }
+
+    /* Categorias */
+    .categorias {
+        padding: 20px 0;
+    }
+
+    /* Passos */
+    .passos {
+        padding: 30px 10px;
+        font-size: 1.2em;
+    }
+
+    .passos-lista {
+        gap: 30px; /* Reduz ainda mais o espaço entre itens */
+    }
+
+    .passo h3 {
+        font-size: 1.1em;
+    }
+
+    .passo p {
+        font-size: 0.9em;
+    }
+
+    /* FAQ */
+    .faq h2 {
+        font-size: 1.6em;
+    }
+
+    .faq-question {
+        font-size: 1em;
+    }
+
+    /* Contact Section */
+    .contact {
+        padding: 20px;
+    }
+    
+    .contact h2 {
+        font-size: 1.5em;
+    }
+
+    .contact p {
+        font-size: 0.9em;
+    }
+
+    .contact-card {
+        padding: 10px;
+        font-size: 0.85em;
+    }
+}
